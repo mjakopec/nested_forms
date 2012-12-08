@@ -1,0 +1,15 @@
+<table width=100%>
+<% @bills.each do |f| %>
+  <tr>
+    <td><%= f.bnr %></td>
+    <td><%= f.customer %></td>
+    <td><%= f.datump %></td>
+    <td><% f.items.each do |e|%>
+    <%= e.description %><br />
+    <% end %>
+    </td>
+    <td><%= link_to 'Show', f %></td>
+    <td><%= link_to 'Destroy', f, method: :delete %></td>
+  </tr>
+<% end %>
+</table>

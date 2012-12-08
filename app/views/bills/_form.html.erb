@@ -1,0 +1,12 @@
+<%= form_for (@bill) do |f| %>
+  <p>
+    <%= f.label      'Bill number:' %>
+    <%= f.text_field :bnr %><br />
+    <%= f.label      'Customer:' %>
+    <%= f.text_field :customer %><br />
+    <%= f.label      'Date of proffer' %>
+    <%= f.text_field :datump %><br />
+  <%= link_to_add_fields "Add Item", f, :items %><br />
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

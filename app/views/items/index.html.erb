@@ -1,0 +1,9 @@
+<table width=100%>
+<% @items.each do |f| %>
+  <tr>
+    <td><%= f.description %></td>
+    <td><%= link_to 'Show', f %></td>
+    <td><%= link_to 'Destroy', f, method: :delete %></td>
+  </tr>
+<% end %>
+</table>

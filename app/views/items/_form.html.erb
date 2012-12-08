@@ -1,0 +1,7 @@
+<%= form_for (@item) do |f| %>
+  <p>
+    <%= f.label      'Description:' %>
+    <%= f.text_field :description %><br />
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
